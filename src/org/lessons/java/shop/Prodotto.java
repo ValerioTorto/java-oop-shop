@@ -46,8 +46,8 @@ public class Prodotto {
         return prezzoBase;
     }
 
-    public void setPrezzoBase(int prezzo) {
-        this.prezzoBase = prezzo;
+    public void setPrezzoBase(int prezzoBase) {
+        this.prezzoBase = prezzoBase;
     }
 
     public int getIva() {
@@ -57,6 +57,12 @@ public class Prodotto {
     public void setIva(int iva) {
         this.iva = iva;
     }
+
+    //Metodo per mostrare il prodotto
+    public String getFullName(){
+        return codice + " " + nome;
+    }
+    public int getFullPrice(int prezzoConIva) { return prezzoBase.getprezz }
 }
 
 

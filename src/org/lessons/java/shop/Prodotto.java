@@ -1,2 +1,63 @@
-package org.lessons.java.shop;public class Prodotto {
+package org.lessons.java.shop;
+
+public class Prodotto {
+
+    //Attributi
+    private int codice;
+    private String nome;
+    private String descrizione;
+    private int prezzoBase;
+    private int iva;
+
+    //Costruttori
+
+
+    public Prodotto(int codice, String nome, String descrizione, int prezzoBase, int iva) {
+        this.codice = codice;
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.prezzoBase = prezzoBase;
+        this.iva = iva;
+    }
+
+    //Getter e Setter
+
+
+    public int getCodice() {
+        return codice;
+    }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescrizione() {
+        return descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
+    }
+
+    public int getPrezzoBase() {
+        return prezzoBase;
+    }
+
+    public void setPrezzoBase(int prezzo) {
+        this.prezzoBase = prezzo;
+    }
+
+    public int getIva() {
+        return iva;
+    }
+
+    public void setIva(int iva) {
+        this.iva = iva;
+    }
 }
+
+
+

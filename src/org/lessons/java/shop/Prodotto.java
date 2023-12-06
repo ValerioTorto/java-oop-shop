@@ -7,12 +7,12 @@ public class Prodotto {
     private String nome;
     private String descrizione;
     private int prezzoBase;
-    private int iva;
+    private double iva;
 
     //Costruttori
 
 
-    public Prodotto(int codice, String nome, String descrizione, int prezzoBase, int iva) {
+    public Prodotto(int codice, String nome, String descrizione, int prezzoBase, double iva) {
         this.codice = codice;
         this.nome = nome;
         this.descrizione = descrizione;
@@ -26,6 +26,7 @@ public class Prodotto {
     public int getCodice() {
         return codice;
     }
+
     public String getNome() {
         return nome;
     }
@@ -50,19 +51,21 @@ public class Prodotto {
         this.prezzoBase = prezzoBase;
     }
 
-    public int getIva() {
+    public double getIva() {
         return iva;
     }
 
-    public void setIva(int iva) {
+    public void setIva(double iva) {
         this.iva = iva;
     }
 
     //Metodo per mostrare il prodotto
-    public String getFullName(){
-        return codice + " " + nome;
+    public String getFullName() {
+        return codice + "#, " + nome;
     }
-    public int getFullPrice(int prezzoConIva) { return prezzoBase.getprezz }
+
+    public double getFullPrice() {
+        return prezzoBase + (prezzoBase * iva);}
 }
 
 
